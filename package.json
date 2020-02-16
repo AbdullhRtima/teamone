@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "nodemon ./bin/www",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
   },
   "dependencies": {
     "concurrently": "^5.1.0",
